@@ -1,0 +1,38 @@
+.logo {
+  font-weight: 900;
+  font-size: 10rem;
+  color: rgb(114, 189, 2);
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+.btn-container {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-container button {
+  background-color: black;
+  border: none;
+  padding: 10px;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.btn-container button:hover {
+  background-color: rgb(114, 189, 2);
+  color: black;
+}

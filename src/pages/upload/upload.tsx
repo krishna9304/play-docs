@@ -22,6 +22,10 @@ const Upload: React.FC<UploadProps> = () => {
   };
 
   const handleUpload = async () => {
+    if (uploadForm.filename.length == 0 || uploadForm.email.length == 0) {
+      toast("Please fill the form correctly");
+      return;
+    }
     const requestFormData = new FormData();
     requestFormData.append("email", uploadForm.email);
     requestFormData.append("filename", uploadForm.filename);
